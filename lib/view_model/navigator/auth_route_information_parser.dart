@@ -5,11 +5,11 @@ class AuthRouteInformationParser extends RouteInformationParser<MyRoutePath> {
   @override
   Future<MyRoutePath> parseRouteInformation(
       RouteInformation routeInformation) async {
-    return MyRoutePath();
+    return AuthRoutePath.loginPath();
   }
 
   @override
   RouteInformation? restoreRouteInformation(MyRoutePath configuration) {
-    return const RouteInformation(location: "/");
+    return const RouteInformation(location: "/login");
   }
 }

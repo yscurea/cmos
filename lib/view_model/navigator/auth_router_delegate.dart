@@ -9,7 +9,7 @@ class AuthRouterDelegate extends RouterDelegate<MyRoutePath>
 
   @override
   MyRoutePath? get currentConfiguration {
-    return MyRoutePath();
+    return AuthRoutePath.loginPath();
   }
 
   @override
